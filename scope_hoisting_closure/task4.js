@@ -1,4 +1,4 @@
-let sum = function(a) {
+const sum = function(a) {
     return function(b) {
         return a + b;
     };
