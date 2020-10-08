@@ -1,21 +1,21 @@
-let a = 1;
-let b = '576';
-let c = true;
+const a = 1;
+const b = '576';
+const c = true;
 
 //boolean to string
-let str = String(c);
+const str = String(c);
 console.log(typeof str); //string
 
 //string to number
-let value = Number(b);
+const value = Number(b);
 console.log(typeof value); //number
 
 //number to string
-let strfromNumber = String(a);
+const strfromNumber = String(a);
 console.log(typeof strfromNumber); //string
 
 //number to boolean
-let bool = Boolean(a);
+const bool = Boolean(a);
 console.log(typeof bool); //boolean
 
 

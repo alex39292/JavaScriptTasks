@@ -1,6 +1,6 @@
-let a = 123;
-let b = 'some text';
-let c = true;
+const a = 123;
+const b = 'some text';
+const c = true;
 
 //boolean - string
 console.log(c - b); //NaN
