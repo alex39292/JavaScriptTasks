@@ -1,5 +1,5 @@
 function multiplyNumeric(obj) {
-    for (let key in obj) {
+    for (key in obj) {
         if (typeof obj[key] == 'number') {
             console.log(key + ' is now ' + (obj[key] *= 2));
         } else {
@@ -8,7 +8,7 @@ function multiplyNumeric(obj) {
     }
 }
 
-let myobject = {
+const myobject = {
     param1: 2,
     param2: 3,
     param3: "some text"
