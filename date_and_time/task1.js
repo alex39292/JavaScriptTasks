@@ -1,2 +1,2 @@
-let date = new Date();
+const date = new Date();
 console.log(date.getDate());
