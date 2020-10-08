@@ -1,4 +1,4 @@
-let a = 2;
-let b = 1;
-let result = (a + b < 4) ? 'Мало' : 'Много';
-console.log(result);
+const a = 2;
+const b = 1;
+const result = (a + b < 4) ? 'Мало' : 'Много';
+console.log(result); //Мало

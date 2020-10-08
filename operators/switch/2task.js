@@ -8,6 +8,6 @@ switch (number) {
     break;
   case 2:
   case 3:
-    console.log('Вы ввели число 2, а может и 3');
+    console.log('Вы ввели число 2, а может и 3'); //this returns
     break;
 }
