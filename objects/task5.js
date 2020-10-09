@@ -1,7 +1,7 @@
 function multiplyNumeric(obj) {
     for (key in obj) {
         if (typeof obj[key] === 'number') {
-            let multNumber = obj[key] * 2;
+            const multNumber = obj[key] * 2;
             console.info(`${key} is now ${multNumber}`);
         } else {
         console.info(`${key} is without definitions`);
