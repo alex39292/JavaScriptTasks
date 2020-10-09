@@ -1,2 +1,2 @@
-const date = new Date();
-console.log(date.getDate());
+const current = new Date().toDateString();
+console.log(current);
