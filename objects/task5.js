@@ -1,9 +1,10 @@
 function multiplyNumeric(obj) {
     for (key in obj) {
-        if (typeof obj[key] == 'number') {
-            console.log(key + ' is now ' + (obj[key] *= 2));
+        if (typeof obj[key] === 'number') {
+            let multNumber = obj[key] * 2;
+            console.info(`${key} is now ${multNumber}`);
         } else {
-        console.log(key + ' is without definitions');
+        console.info(`${key} is without definitions`);
         }
     }
 }
