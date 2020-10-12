@@ -7,9 +7,10 @@ function formatDate(date) {
     let month = date.getMonth() + 1;
     month = month < 10 ? '0' + month : month;
 
-    let year = date.getFullYear();
+    let year = date.getFullYear() % 100;
+    year = year < 10 ? '0' + year : year;
 
     return `${day}.${month}.${year}`;
 }
 
-console.log(formatDate(date));
+console.log(formatDate(new Date(2014, 0, 30)));
