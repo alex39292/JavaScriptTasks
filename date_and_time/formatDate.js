@@ -13,4 +13,4 @@ function formatDate(date) {
     return `${day}.${month}.${year}`;
 }
 
-console.log(formatDate(new Date(2014, 0, 30)));
+console.log(formatDate(new Date()));
