@@ -1,0 +1,27 @@
+{
+  "name": "javascripttasks",
+  "version": "1.0.0",
+  "description": "Tasks from EPAM Lab on JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "pretask" : "echo \"Pre script\"",
+    "task" : "node arrays/task.js",
+    "posttask": "echo \"Post script\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alex39292/JavaScriptTasks.git"
+  },
+  "author": "Aliaksandr Danilin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alex39292/JavaScriptTasks/issues"
+  },
+  "homepage": "https://github.com/alex39292/JavaScriptTasks#readme",
+  "dependencies": {
+    "fs": "^0.0.1-security"
+  },
+  "devDependencies": {
+    "select": "^1.1.2"
+  }
+}
