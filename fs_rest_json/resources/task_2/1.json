@@ -12,7 +12,7 @@
 	"counter": 11.3,
 	"config": "not a common",
 	"const": "the first const",
-	"parameters": [3,"","add","delete","update","more","--",01,false],
+	"parameters": [3,"","add","delete","update","more","--",1,false],
 	"description": "my first project on js"
 
 }
