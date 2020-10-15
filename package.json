@@ -4,8 +4,8 @@
   "description": "Tasks from EPAM Lab on JavaScript",
   "main": "index.js",
   "scripts": {
-    "pretask" : "echo \"Pre script\"",
-    "task" : "node arrays/task.js",
+    "pretask": "echo \"Pre script\"",
+    "task": "node arrays/task.js",
     "posttask": "echo \"Post script\""
   },
   "repository": {
@@ -19,7 +19,8 @@
   },
   "homepage": "https://github.com/alex39292/JavaScriptTasks#readme",
   "dependencies": {
-    "fs": "^0.0.1-security"
+    "fs": "^0.0.1-security",
+    "node-fetch": "^2.6.1"
   },
   "devDependencies": {
     "select": "^1.1.2"

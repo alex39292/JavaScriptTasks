@@ -15,7 +15,7 @@ function checkJSON(jsonPath) {
 
     const obj = {
         "flag": typeof json.flag === "boolean",
-        "myPromises": Array.isArray(json.myPromises) === true,
+        "myPromises": Array.isArray(json.myPromises),
         "element": typeof json.element === "object",
         "screenshot": json.screenshot === null,
         "elementText": typeof json.elementText === "string",
