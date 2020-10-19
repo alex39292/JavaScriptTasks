@@ -6,7 +6,12 @@
   "scripts": {
     "pretask": "echo \"Pre script\"",
     "task": "node arrays/task.js",
-    "posttask": "echo \"Post script\""
+    "posttask": "echo \"Post script\"",
+    "startApp": "node fs_rest_json/task_5/app.js",
+    "add": "node fs_rest_json/task_5/app.js add",
+    "list": "node fs_rest_json/task_5/app.js list",
+    "read": "node fs_rest_json/task_5/app.js read",
+    "remove": "node fs_rest_json/task_5/app.js remove"
   },
   "repository": {
     "type": "git",
@@ -20,7 +25,8 @@
   "homepage": "https://github.com/alex39292/JavaScriptTasks#readme",
   "dependencies": {
     "fs": "^0.0.1-security",
-    "node-fetch": "^2.6.1"
+    "node-fetch": "^2.6.1",
+    "node-xlsx": "^0.15.0"
   },
   "devDependencies": {
     "select": "^1.1.2"
