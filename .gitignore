@@ -9,3 +9,6 @@ node_modules/*
 
 # Local History for Visual Studio Code
 .history/
+.eslintrc.json
+.eslintignore
+unit_testing_framework/.mocharc.js

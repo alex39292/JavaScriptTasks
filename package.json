@@ -4,9 +4,12 @@
   "description": "Tasks from EPAM Lab on JavaScript",
   "main": "index.js",
   "scripts": {
-    "pretask" : "echo \"Pre script\"",
-    "task" : "node arrays/task.js",
-    "posttask": "echo \"Post script\""
+    "pretask": "echo \"Pre script\"",
+    "task": "node arrays/task.js",
+    "posttask": "echo \"Post script\"",
+    "test": "mocha",
+    "lint": "eslint ./",
+    "coverage": "nyc npm run test"
   },
   "repository": {
     "type": "git",
@@ -18,10 +21,19 @@
     "url": "https://github.com/alex39292/JavaScriptTasks/issues"
   },
   "homepage": "https://github.com/alex39292/JavaScriptTasks#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^7.11.0",
+    "eslint-config-google": "^0.14.0",
+    "mocha": "^8.2.0",
+    "mochawesome": "^6.1.1",
+    "nyc": "^15.1.0",
+    "select": "^1.1.2"
+  },
+  "nyc": {
+    "reporter": "html"
+  },
   "dependencies": {
     "fs": "^0.0.1-security"
-  },
-  "devDependencies": {
-    "select": "^1.1.2"
   }
 }
