@@ -12,3 +12,5 @@ node_modules/*
 .eslintrc.json
 .eslintignore
 unit_testing_framework/.mocharc.js
+.nyc_output
+coverage

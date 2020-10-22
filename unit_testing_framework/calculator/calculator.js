@@ -13,33 +13,33 @@ class Calculator {
 
     /**
        *
-       * Sum all parameters and returns answer
-       * @param {Array<Number>} values
+       * Sum all parameters of type Number and returns answer
+       * @param {...Number} values
        * @return {Number} Sum of numbers
        * @memberof Calculator
        */
     add(...values) {
-        if (Array.isArray(values) &&
+        if (Array.isArray(values) && (values.length !== 1) &&
             values.every(item => typeof item === 'number')) {
             return values.reduce((a, b) => a + b)
         } else {
-            throw new Error('Message')
+            throw new TypeError('Invalid types of parameters')
         }
     }
 
     /**
      *
-     * Multiply all parameters and returns answer
-     * @param {Array<Number>} values
+     * Multiply all parameters of type Number and returns answer
+     * @param {...Number} values
      * @return {Number} Multiply numbers
      * @memberof Calculator
      */
     multiply(...values) {
-        if (Array.isArray(values) &&
+        if (Array.isArray(values) && (values.length !== 1) &&
             values.every(item => typeof item === 'number')) {
             return values.reduce((a, b) => a * b)
         } else {
-            throw new Error('Message')
+            throw new TypeError('Invalid types of parameters')
         }
     }
 }
