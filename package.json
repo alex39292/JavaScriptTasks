@@ -4,8 +4,8 @@
   "description": "Tasks from EPAM Lab on JavaScript",
   "main": "index.js",
   "scripts": {
-    "pretask" : "echo \"Pre script\"",
-    "task" : "node arrays/task.js",
+    "pretask": "echo \"Pre script\"",
+    "task": "node arrays/task.js",
     "posttask": "echo \"Post script\""
   },
   "repository": {
@@ -22,6 +22,9 @@
     "fs": "^0.0.1-security"
   },
   "devDependencies": {
-    "select": "^1.1.2"
+    "mocha": "^8.2.0",
+    "protractor": "^7.0.0",
+    "select": "^1.1.2",
+    "selenium-webdriver": "^4.0.0-alpha.7"
   }
 }
