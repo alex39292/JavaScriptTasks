@@ -1,15 +1,15 @@
 function parse(str) {
-    const regExp = /(-?\d+(?:\.\d+)?)\s*([\*\/\-\+])\s*(-?\d+(?:\.\d+)?)/
+    const regExp = /(-?\d+(?:\.\d+)?)\s*([\*\/\-\+])\s*(-?\d+(?:\.\d+)?)/;
 
-    const result = str.match(regExp)
+    const result = str.match(regExp);
 
     if (!result) {
-        result = []
+        result = [];
     } else {
-        result.shift()
+        result.shift();
     }
 
-    return result
+    return result;
 }
 
-console.log(parse("1.2 * 3.4"))
+console.log(parse("1.2 * 3.4"));
