@@ -11,7 +11,7 @@ describe("Protractor Demo App", () => {
 
     it("Check title of the page", () => {
         expect(browser.getTitle()).toEqual("Super Calculator");
-    })
+    });
 
     it("should add 3 and 3", () => {
         firstNumber.sendKeys(3);
@@ -20,7 +20,7 @@ describe("Protractor Demo App", () => {
         goButton.click();
 
         expect(element(by.binding("latest")).getText()).toEqual("6");
-    })
+    });
 
     it("should multiply 3 and 7", () => {
         firstNumber.sendKeys(3);
@@ -29,7 +29,7 @@ describe("Protractor Demo App", () => {
         goButton.click();
 
         expect(element(by.binding("latest")).getText()).toEqual("21");
-    })
+    });
 
     it("should div 3 and 0", () => {
         firstNumber.sendKeys(3);
@@ -38,7 +38,7 @@ describe("Protractor Demo App", () => {
         goButton.click();
 
         expect(element(by.binding("latest")).getText()).toEqual("0");
-    })
+    });
 
     it("should 10 % 2", () => {
         firstNumber.sendKeys(10);
@@ -47,9 +47,9 @@ describe("Protractor Demo App", () => {
         goButton.click();
 
         expect(element(by.binding("latest")).getText()).toEqual("0");
-    })
+    });
 
     it("check history in memory", () => {
         expect(history.count()).toEqual(4);
-    })
-})
+    });
+});

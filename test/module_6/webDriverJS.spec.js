@@ -23,5 +23,5 @@ describe("Selenium-webdriverJS test", function () {
       .then(btn => btn.click())
       .then(_ => driver.wait(until.elementLocated(By.css('.remove-yes')), 10000))
       .then(btn => btn.click());
-  })
-})
+  });
+});
