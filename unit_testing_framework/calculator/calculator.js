@@ -21,9 +21,9 @@ class Calculator {
     add(...values) {
         if (Array.isArray(values) && (values.length !== 1) &&
             values.every(item => typeof item === 'number')) {
-            return values.reduce((a, b) => a + b)
+            return values.reduce((a, b) => a + b);
         } else {
-            throw new TypeError('Invalid types of parameters')
+            throw new TypeError('Invalid types of parameters');
         }
     }
 
@@ -37,9 +37,9 @@ class Calculator {
     multiply(...values) {
         if (Array.isArray(values) && (values.length !== 1) &&
             values.every(item => typeof item === 'number')) {
-            return values.reduce((a, b) => a * b)
+            return values.reduce((a, b) => a * b);
         } else {
-            throw new TypeError('Invalid types of parameters')
+            throw new TypeError('Invalid types of parameters');
         }
     }
 }
