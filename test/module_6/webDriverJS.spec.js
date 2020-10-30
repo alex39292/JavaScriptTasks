@@ -1,9 +1,9 @@
 const { expect } = require("chai");
-const {Builder, By, until} = require("selenium-webdriver")
-const driver = new Builder().forBrowser('firefox').build()
+const {Builder, By, until} = require("selenium-webdriver");
+const driver = new Builder().forBrowser('firefox').build();
 
 describe("Selenium-webdriverJS test", function () {
-  afterEach(async () => await driver.quit())
+  afterEach(async () => await driver.quit());
 
   it("oz.by simple test: find a book, add to cart, delete from cart", async () => {
       await driver.get('https://oz.by/')
@@ -22,6 +22,6 @@ describe("Selenium-webdriverJS test", function () {
       .then(_ => driver.findElement(By.css('button.remove')))
       .then(btn => btn.click())
       .then(_ => driver.wait(until.elementLocated(By.css('.remove-yes')), 10000))
-      .then(btn => btn.click())
+      .then(btn => btn.click());
   })
 })
