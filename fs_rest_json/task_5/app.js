@@ -1,5 +1,5 @@
-"use strict"
+"use strict";
 
-const todo = require("./module/todo.js")
+const todo = require("./module/todo.js");
 
-todo.start()
+todo.start();

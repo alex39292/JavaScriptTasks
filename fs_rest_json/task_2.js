@@ -1,17 +1,12 @@
-"use strict"
+"use strict";
 
 function checkJSON(jsonPath) {
-    const fs = require("fs")
-    const path = require("path")
-    const json = require(jsonPath)
+    const fs = require("fs");
+    const path = require("path");
+    const json = require(jsonPath);
 
-    const fileName = path.join(__dirname, "/resources/task_2/", "log.txt")
-
-    fs.writeFile(fileName, "", (err) => {
-        if (err) {
-            throw err
-        }
-    })
+    const fileName = path.join(__dirname, "/resources/task_2/", "log.txt");
+    const writeStream = fs.createWriteStream(fileName);
 
     const obj = {
         "flag": typeof json.flag === "boolean",
@@ -24,7 +19,7 @@ function checkJSON(jsonPath) {
         "constant": json.const.toUpperCase().includes("FiRst".toUpperCase()),
         "parameters": json.parameters.length === 8,
         "description": json.description.length > 5 && json.description.length < 13,
-    }
+    };
 
     let count = 0;
     for (let i in obj) {
@@ -33,19 +28,15 @@ function checkJSON(jsonPath) {
             if (count === Object.keys(obj).length) {
                 fs.unlink(fileName, (err) => {
                     if (err) {
-                        throw err
+                        throw err;
                     }
-                })
-                console.log("OK")
+                });
+                console.log("OK");
             }
         } else {
-            fs.appendFile(fileName, `Property "${i}" is incorrect: ${json[i]}\n`, (err) => {
-                if (err) {
-                    throw err
-                }
-            })
+            writeStream.write(`Property "${i}" is incorrect: ${json[i]}\n`);
         }
     }
-}//
+}
 
-checkJSON("./resources/task_2/1.json")
+checkJSON("./resources/task_2/1.json");
