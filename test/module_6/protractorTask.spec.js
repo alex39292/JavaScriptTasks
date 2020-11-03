@@ -1,55 +1,34 @@
-const { browser, element, $ } = require("protractor");
+/* eslint-disable no-undef */
+const app = require("../module_6/page/app");
 
+// eslint-disable-next-line no-undef
 describe("Protractor Demo App", () => {
-    const firstNumber = element(by.model("first"));
-    const secondNumber = element(by.model("second"));
-    const goButton = element(by.id("gobutton"));
-    const operator = element(by.model("operator"));
-    const history = element.all(by.css("tr.ng-scope"));
-
-    browser.get("http://juliemr.github.io/protractor-demo/");
-
     it("Check title of the page", () => {
-        expect(browser.getTitle()).toEqual("Super Calculator");
+        app.get();
+        app.checkTitle("Super Calculator");
     });
 
     it("should add 3 and 3", () => {
-        firstNumber.sendKeys(3);
-        secondNumber.sendKeys(3);
-        operator.sendKeys("+");
-        goButton.click();
-
-        expect(element(by.binding("latest")).getText()).toEqual("6");
+        app.perform(3, 3, "+");
+        app.checkResult("6");
     });
 
     it("should multiply 3 and 7", () => {
-        firstNumber.sendKeys(3);
-        secondNumber.sendKeys(7);
-        operator.sendKeys("*");
-        goButton.click();
-
-        expect(element(by.binding("latest")).getText()).toEqual("21");
+        app.perform(3, 7, "*");
+        app.checkResult("21");
     });
 
     it("should div 3 and 0", () => {
-        firstNumber.sendKeys(3);
-        secondNumber.sendKeys(0);
-        operator.sendKeys("*");
-        goButton.click();
-
-        expect(element(by.binding("latest")).getText()).toEqual("0");
+        app.perform(3, 0, "/");
+        app.checkResult("Infinity");
     });
 
     it("should 10 % 2", () => {
-        firstNumber.sendKeys(10);
-        secondNumber.sendKeys(2);
-        operator.sendKeys("%");
-        goButton.click();
-
-        expect(element(by.binding("latest")).getText()).toEqual("0");
+        app.perform(10, 2, "%");
+        app.checkResult("0");
     });
 
     it("check history in memory", () => {
-        expect(history.count()).toEqual(4);
+        app.checkHistory(4);
     });
 });
