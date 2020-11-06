@@ -1,0 +1,6 @@
+Property "myPromises" is incorrect: [object Object]
+Property "screenshot" is incorrect: 
+Property "elementText" is incorrect: false
+Property "config" is incorrect: not a common
+Property "parameters" is incorrect: 3,,add,delete,update,more,--,1,false
+Property "description" is incorrect: my first project on js
