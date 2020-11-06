@@ -23,7 +23,9 @@
   },
   "homepage": "https://github.com/alex39292/JavaScriptTasks#readme",
   "dependencies": {
-    "fs": "^0.0.1-security"
+    "fs": "^0.0.1-security",
+    "node-fetch": "^2.6.1",
+    "node-xlsx": "^0.15.0"
   },
   "devDependencies": {
     "chai": "^4.2.0",
