@@ -29,6 +29,6 @@ describe("Protractor Demo App", () => {
     });
 
     it("check history in memory", () => {
-        expect(app.checkHistory()).toEqual(4);
+        expect(app.getHistory()).toEqual(4);
     });
 });

@@ -1,6 +1,3 @@
-/* eslint-disable no-undef */
-const { browser, element, by, $$ } = require("protractor");
-
 class DemoApp {
     constructor() {
         this.firstNumber = element(by.model("first"));
@@ -34,7 +31,7 @@ class DemoApp {
         return element(by.binding("latest")).getText();
     }
 
-    checkHistory() {
+    getHistory() {
         return this.history.count();
     }
 }
