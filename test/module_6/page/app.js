@@ -16,10 +16,10 @@ class DemoApp {
         browser.get("http://juliemr.github.io/protractor-demo/");
     }
 
-    checkTitle(title) {
+    getTitle() {
         browser.executeScript("document.querySelector('body').style.background = 'grey'");
         browser.executeScript("arguments[0].style.backgroundColor = 'red'", this.text);
-        expect(browser.executeScript("return document.title")).toEqual(title);
+        return browser.executeScript("return document.title");
     }
 
     perform(num1, num2, operator) {
@@ -30,12 +30,12 @@ class DemoApp {
         browser.actions().mouseMove(this.goButton).click().perform();
     }
 
-    checkResult(expectedResut) {
-        expect(element(by.binding("latest")).getText()).toEqual(expectedResut);
+    getResult() {
+        return element(by.binding("latest")).getText();
     }
 
-    checkHistory(historyResult) {
-        expect(this.history.count()).toEqual(historyResult);
+    checkHistory() {
+        return this.history.count();
     }
 }
 
