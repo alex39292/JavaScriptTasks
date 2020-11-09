@@ -10,7 +10,7 @@
     "test": "mocha --timeout 1000000",
     "update": "webdriver-manager update",
     "start": "webdriver-manager start",
-    "protractor": "protractor"
+    "protractor": "protractor conf.js",
     "startApp": "node fs_rest_json/task_5/app.js",
     "add": "node fs_rest_json/task_5/app.js add",
     "list": "node fs_rest_json/task_5/app.js list",
