@@ -8,6 +8,7 @@
       "task": "node arrays/task.js",
       "posttask": "echo \"Post script\"",
       "test": "mocha",
+      "nyc": "npm test",
       "lint": "eslint ./",
       "coverage": "nyc npm run test",
       "startApp": "node fs_rest_json/task_5/app.js",
