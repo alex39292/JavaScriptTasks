@@ -1,5 +1,3 @@
-const { browser, element, $ } = require("protractor");
-
 describe("Protractor Demo App", () => {
     const firstNumber = element(by.model("first"));
     const secondNumber = element(by.model("second"));
@@ -8,6 +6,11 @@ describe("Protractor Demo App", () => {
     const history = element.all(by.css("tr.ng-scope"));
 
     browser.get("http://juliemr.github.io/protractor-demo/");
+    
+    beforeEach(() => {
+        firstNumber.clear();
+        secondNumber.clear();
+    })
 
     it("Check title of the page", () => {
         expect(browser.getTitle()).toEqual("Super Calculator");
