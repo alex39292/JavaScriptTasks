@@ -10,8 +10,7 @@
     "test": "mocha --timeout 1000000",
     "update": "webdriver-manager update",
     "start": "webdriver-manager start",
-    "protractor": "protractor configurations/conf.js",
-    "yargs": "node test/module_6/yargs.js"
+    "protractor": "protractor configurations/conf.js"
   },
   "repository": {
     "type": "git",
