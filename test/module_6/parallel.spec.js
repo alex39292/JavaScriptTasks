@@ -13,18 +13,18 @@ describe("Protractor Demo App", () => {
         expect(app.getResult()).toEqual("6");
     });
 
-    it("should multiply 3 and 7", () => {
-        app.perform(3, 7, "*");
-        expect(app.getResult()).toEqual("21");
+    it("should multiply 10 and 10", () => {
+        app.perform(10, 10, "*");
+        expect(app.getResult()).toEqual("100");
     });
 
-    it("should div 3 and 0", () => {
-        app.perform(3, 0, "/");
-        expect(app.getResult()).toEqual("Infinity");
+    it("should div 36 and 6", () => {
+        app.perform(36, 6, "/");
+        expect(app.getResult()).toEqual("6");
     });
 
-    it("should 10 % 2", () => {
-        app.perform(10, 2, "%");
+    it("should 100 % 2", () => {
+        app.perform(100, 2, "%");
         expect(app.getResult()).toEqual("0");
     });
 
