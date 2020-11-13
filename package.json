@@ -7,6 +7,10 @@
     "pretask": "echo \"Pre script\"",
     "task": "node arrays/task.js",
     "posttask": "echo \"Post script\"",
+    "test": "mocha --timeout 1000000",
+    "update": "webdriver-manager update",
+    "start": "webdriver-manager start",
+    "protractor": "protractor conf.js",
     "startApp": "node fs_rest_json/task_5/app.js",
     "add": "node fs_rest_json/task_5/app.js add",
     "list": "node fs_rest_json/task_5/app.js list",
@@ -30,6 +34,11 @@
     "node-xlsx": "^0.15.0"
   },
   "devDependencies": {
-    "select": "^1.1.2"
+    "chai": "^4.2.0",
+    "mocha": "^8.2.0",
+    "protractor": "^7.0.0",
+    "select": "^1.1.2",
+    "selenium-webdriver": "^4.0.0-alpha.7",
+    "webdriver-manager": "^12.1.7"
   }
 }
