@@ -1,48 +1,39 @@
 {
-    "name": "javascripttasks",
-    "version": "1.0.0",
-    "description": "Tasks from EPAM Lab on JavaScript",
-    "main": "index.js",
-    "scripts": {
-      "pretask": "echo \"Pre script\"",
-      "task": "node arrays/task.js",
-      "posttask": "echo \"Post script\"",
-      "test": "mocha",
-      "nyc": "npm test",
-      "lint": "eslint ./",
-      "coverage": "nyc npm run test",
-      "startApp": "node fs_rest_json/task_5/app.js",
-      "add": "node fs_rest_json/task_5/app.js add",
-      "list": "node fs_rest_json/task_5/app.js list",
-      "read": "node fs_rest_json/task_5/app.js read",
-      "remove": "node fs_rest_json/task_5/app.js remove",
-      "makeXlsxFromJson": "node fs_rest_json/task_3.js"
-    },
-    "repository": {
-      "type": "git",
-      "url": "git+https://github.com/alex39292/JavaScriptTasks.git"
-    },
-    "author": "Aliaksandr Danilin",
-    "license": "ISC",
-    "bugs": {
-      "url": "https://github.com/alex39292/JavaScriptTasks/issues"
-    },
-    "homepage": "https://github.com/alex39292/JavaScriptTasks#readme",
-    "dependencies": {
-      "fs": "^0.0.1-security",
-      "node-fetch": "^2.6.1",
-      "node-xlsx": "^0.15.0"
-    },
-    "devDependencies": {
-      "chai": "^4.2.0",
-      "eslint": "^7.11.0",
-      "eslint-config-google": "^0.14.0",
-      "mocha": "^8.2.0",
-      "mochawesome": "^6.1.1",
-      "nyc": "^15.1.0",
-      "select": "^1.1.2"
-    },
-    "nyc": {
-      "reporter": "html"
-    }
+  "name": "javascripttasks",
+  "version": "1.0.0",
+  "description": "Tasks from EPAM Lab on JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "pretask": "echo \"Pre script\"",
+    "task": "node arrays/task.js",
+    "posttask": "echo \"Post script\"",
+    "test": "mocha --timeout 1000000",
+    "update": "webdriver-manager update",
+    "start": "webdriver-manager start",
+    "protractor": "protractor configurations/conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alex39292/JavaScriptTasks.git"
+  },
+  "author": "Aliaksandr Danilin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alex39292/JavaScriptTasks/issues"
+  },
+  "homepage": "https://github.com/alex39292/JavaScriptTasks#readme",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "node-fetch": "^2.6.1",
+    "node-xlsx": "^0.15.0",
+    "yargs": "^16.1.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.2.0",
+    "protractor": "^7.0.0",
+    "select": "^1.1.2",
+    "selenium-webdriver": "^4.0.0-alpha.7",
+    "webdriver-manager": "^12.1.7"
   }
+}
