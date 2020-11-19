@@ -1,5 +1,5 @@
 /* eslint-disable no-undef */
-const app = require("../module_6/page/app");
+const app = require("./page/app");
 
 // eslint-disable-next-line no-undef
 describe("Protractor Demo App", () => {
